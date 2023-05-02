@@ -1,0 +1,224 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Cores */
+:root {
+	--primary-color: #1a1a1a;
+	--secondary-color: #ffcc00;
+	--accent-color: #ff7f00;
+}
+
+/* Geral */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header {
+	background-color: var(--primary-color);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 20px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+nav li a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 700;
+	transition: all 0.3s ease-in-out;
+}
+
+nav li a:hover {
+	color: var(--secondary-color);
+}
+
+.banner {
+	max-width: 800px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.banner h1 {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+.banner p {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.btn {
+	background-color: var(--accent-color);
+	color: white;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+	background-color: var(--secondary-color);
+}
+
+/* Sobre */
+section#about {
+	background-color: white;
+	color: var(--primary-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 20px;
+}
+
+section#about h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+section#about p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 40px;
+	max-width: 800px;
+	text-align: center;
+}
+
+section#about img {
+	max-width: 400px;
+	margin-bottom: 20px;
+}
+
+/* Compre Agora */
+section#purchase {
+	background-color: var(--primary-color);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 20px;
+}
+
+section#purchase h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+section#purchase p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 40px;
+	max-width: 800px;
+	text-align: center;
+}
+
+form label {
+	display: block;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+}
+
+form input[type="submit"] {
+	background-color: var(--secondary-color);
+	color: white;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	transition: all 0.3s ease-in-out;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    }
+    
+    footer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    }
+    
+    footer ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 40px;
+    }
+    
+    footer li {
+    margin: 0 10px;
+    }
+    
+    footer li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    }
+    
+    footer li a:hover {
+    color: var(--secondary-color);
+    }
+    
+    @media screen and (max-width: 768px) {
+    header nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+    header nav li {
+        margin: 10px 0;
+    }
+    
+    section#about img {
+        max-width: 100%;
+    }
+    
+    .banner h1 {
+        font-size: 36px;
+    }
+    
+    .banner p {
+        font-size: 18px;
+    }
+    
+    section#purchase form {
+        max-width: 400px;
+    }
+}
